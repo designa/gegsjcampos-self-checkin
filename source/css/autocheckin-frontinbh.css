@@ -1,9 +1,15 @@
 body.user-standby, body.admin header{
-	background: url(../img/bg-beers.jpg);
+  padding-top: 100px;
+  background-color: #666363;
+  background: url(../img/weekend.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 #logo{
-i	background: url(../img/devbeer.png) 150px 40px;
+  background: url(../img/weekend_logo.png) 150px 40px;
 	width:150px;
 	height:40px;
 	margin: 50px auto 0;

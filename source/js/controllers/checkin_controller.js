@@ -83,7 +83,7 @@
 
       eventick.checkAttendee(defer, attendee);
 
-      dymoprinter.print(attendee.name);
+      dymoprinter.print(attendee.name, attendee.ticket_type);
 
       $scope.showLightboxSuccess(attendee);
       $scope.email = '';

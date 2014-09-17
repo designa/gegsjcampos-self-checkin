@@ -19,6 +19,7 @@
 
 
 .user-standby-content{
+	padding-top: 13%;
 	text-align: center;
 }
 
@@ -170,4 +171,20 @@ video {
     transform: scaleX(-1);
     filter: FlipH;
     -ms-filter: "FlipH";
+}
+
+.admin .new-attendee{
+	display: block;
+	float: left;
+	width: 100%;
+	background: #fbfbfb;
+	padding: 15px;
+	border: 1px solid #efefef;
+	border-radius: 5px;
+}
+
+.admin .new-attendee input{
+	padding: 4px 10px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
 }

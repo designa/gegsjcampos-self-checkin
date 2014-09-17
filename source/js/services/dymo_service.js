@@ -4,7 +4,7 @@
   SelfCheckin.Services.
     factory('dymoprinter',['$http',function($http) {
       var labelXml, printerName, label;
-      $http.get('/labels/default.label').success(function(data, status, headers, config) {
+      $http.get('/labels/weekend.label').success(function(data, status, headers, config) {
         labelXml = data;
         label = dymo.label.framework.openLabelXml(labelXml);
         console.log('Label loaded');
@@ -32,9 +32,10 @@
     }
 
     var dymoprinter = {
-      print: function(name){
+      print: function(name,type){
         // set label text
-        label.setObjectText("TEXT", name);
+        label.setObjectText("TEXT_1", name);
+        label.setObjectText("TEXT_2", type);
         label.print(printerName);
       }
     };

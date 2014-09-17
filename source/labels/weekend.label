@@ -8,8 +8,7 @@
   </DrawCommands>
   <ObjectInfo>
     <TextObject>
-      <Name>TEXT</Name>
-      <Name>TEXT</Name>
+      <Name>TEXT_1</Name>
       <ForeColor Alpha="255" Red="0" Green="0" Blue="0"/>
       <BackColor Alpha="0" Red="255" Green="255" Blue="255"/>
       <LinkedObjectName></LinkedObjectName>
@@ -18,26 +17,45 @@
       <IsVariable>False</IsVariable>
       <HorizontalAlignment>Left</HorizontalAlignment>
       <VerticalAlignment>Middle</VerticalAlignment>
-      <TextFitMode>AlwaysFit</TextFitMode>
+      <TextFitMode>ShrinkToFit</TextFitMode>
       <UseFullFontHeight>True</UseFullFontHeight>
       <Verticalized>False</Verticalized>
       <StyledText>
         <Element>
-          <String>C</String>
+          <String>João Mateus Scarpa</String>
           <Attributes>
-            <Font Family="Lucida Grande" Size="13" Bold="False" Italic="False" Underline="False" Strikeout="False"/>
-            <ForeColor Alpha="255" Red="0" Green="0" Blue="0"/>
-          </Attributes>
-        </Element>
-        <Element>
-          <String>Cirdes henrique</String>
-          <Attributes>
-            <Font Family="Lucida Grande" Size="13" Bold="False" Italic="False" Underline="False" Strikeout="False"/>
+            <Font Family="Lucida Grande" Size="24" Bold="True" Italic="False" Underline="False" Strikeout="False"/>
             <ForeColor Alpha="255" Red="0" Green="0" Blue="0"/>
           </Attributes>
         </Element>
       </StyledText>
     </TextObject>
-    <Bounds X="321.5997" Y="57.59995" Width="4612.8" Height="1881.6"/>
+    <Bounds X="321.5997" Y="396.5625" Width="4603.828" Height="741.6406"/>
+  </ObjectInfo>
+  <ObjectInfo>
+    <TextObject>
+      <Name>TEXT_2</Name>
+      <ForeColor Alpha="255" Red="0" Green="0" Blue="0"/>
+      <BackColor Alpha="0" Red="255" Green="255" Blue="255"/>
+      <LinkedObjectName></LinkedObjectName>
+      <Rotation>Rotation0</Rotation>
+      <IsMirrored>False</IsMirrored>
+      <IsVariable>False</IsVariable>
+      <HorizontalAlignment>Center</HorizontalAlignment>
+      <VerticalAlignment>Middle</VerticalAlignment>
+      <TextFitMode>ShrinkToFit</TextFitMode>
+      <UseFullFontHeight>True</UseFullFontHeight>
+      <Verticalized>False</Verticalized>
+      <StyledText>
+        <Element>
+          <String>Desenvolvedor</String>
+          <Attributes>
+            <Font Family="Lucida Grande" Size="18" Bold="False" Italic="False" Underline="False" Strikeout="False"/>
+            <ForeColor Alpha="255" Red="0" Green="0" Blue="0"/>
+          </Attributes>
+        </Element>
+      </StyledText>
+    </TextObject>
+    <Bounds X="417.381" Y="1016.797" Width="4099.141" Height="753.4375"/>
   </ObjectInfo>
 </DieCutLabel>
