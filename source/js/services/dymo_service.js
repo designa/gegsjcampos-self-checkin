@@ -9,7 +9,7 @@
         label = dymo.label.framework.openLabelXml(labelXml);
         console.log('Label loaded');
       });
-      
+
     // select printer to print on
     // for simplicity sake just use the first LabelWriter printer
     var printers = dymo.label.framework.getPrinters();
@@ -31,9 +31,28 @@
       console.log("Impressora encontrada: " + printerName);
     }
 
+    function whichType () {
+      var type = window.prompt('Qual seu perfil? \n\n[1] BUSINESS \n[2] DESIGNER \n[3] DEVELOPER');
+
+      if (type == 1) {
+        return 'BUSINESS';
+      } else if (type == 2) {
+        return 'DESIGNER';
+      } else if (type == 3) {
+        return 'DEVELOPER';
+      } else {
+        return type;
+      }
+    }
+
     var dymoprinter = {
       print: function(name,type){
-        // set label text
+        var valid_types = /^(BUSINESS|DESIGNER|DEVELOPER|ORGANIZER|COACH|JUDGE)$/
+
+        if (type.match(valid_types) == null) {
+          type = whichType();
+        }
+
         label.setObjectText("TEXT_1", name);
         label.setObjectText("TEXT_2", type);
         label.print(printerName);
