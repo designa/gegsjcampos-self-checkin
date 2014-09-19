@@ -4,16 +4,19 @@ angular.module('selfCheckin').config(function($routeProvider, $locationProvider)
   $locationProvider.html5Mode(true);
 
   $routeProvider
-   .when('/admin', {
+  .when('/admin', {
     templateUrl: 'admin',
     controller: 'AdminCtrl',
   }).when('/', {
-   templateUrl: 'checkin',
-   controller: 'CheckinCtrl',
- }).when('/login', {
-  templateUrl: 'login',
-  controller: 'LoginCtrl',
-});
+    templateUrl: 'checkin',
+    controller: 'CheckinCtrl',
+  }).when('/login', {
+    templateUrl: 'login',
+    controller: 'LoginCtrl',
+  }).when('/export', {
+    templateUrl: 'export',
+    controller: 'AdminCtrl',
+  });
 });
 
 var SelfCheckin = SelfCheckin || {};

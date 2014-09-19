@@ -54,7 +54,6 @@
     for (i=0; i <= $scope.attendees.length-1; i++) {
       $scope.attendees[i].checked_at = null;
     }
-
   }
 
 }]);
