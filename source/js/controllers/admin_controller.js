@@ -45,7 +45,16 @@
   $scope.addAttendee = function(){
     if ($scope.attendee.name && $scope.attendee.ticket_type && $scope.attendee.email){
       $scope.attendees.push($scope.attendee);
+      $scope.attendee = null;
     }
+  }
+
+  $scope.resetDay = function(){
+    var i;
+    for (i=0; i <= $scope.attendees.length-1; i++) {
+      $scope.attendees[i].checked_at = null;
+    }
+
   }
 
 }]);

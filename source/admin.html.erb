@@ -9,11 +9,12 @@
     <%= link_to 'Sair', '', class: 'btn btn-embossed btn-primary pull-right', ng_click: 'logout()' %>
     <div class="content-header">
       <%= link_to 'Voltar para credenciamento', '/', class: 'btn btn-embossed btn-primary' %>
-      <%= link_to 'Sincronizar com o servidor', '#/admin',  class: 'btn btn-embossed btn-primary', ng_click: 'syncEventick()' %>
+      <%#= link_to 'Sincronizar com o servidor', '#/admin',  class: 'btn btn-embossed btn-primary', ng_click: 'syncEventick()' %>
       <%= link_to 'Adicionar participante', '#/admin',  class: 'btn btn-embossed btn-primary', ng_click: 'newAteendee = !newAteendee' %>
+      <%= link_to 'Iniciar novo dia', '#/admin',  class: 'btn btn-embossed btn-primary', ng_click: 'resetDay()' %>
       <h2><span>CHECK-INS</span> {{ (attendees | filter:checked).length }}/{{ attendees.length }}</h2>
     </div>
-    
+
     <div class="new-attendee" ng-show="newAteendee">
       <h4> Novo participante </h4>
       <input type="text" placeholder="Nome" ng-model="attendee.name" >
