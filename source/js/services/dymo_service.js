@@ -1,4 +1,4 @@
-  (function () {
+(function () {
    'use strict';
 
   SelfCheckin.Services.
@@ -32,8 +32,18 @@
     }
 
     var dymoprinter = {
-      print: function(name){
+      print: function(name,type){
+
+        if (type == "ORGANIZAÇÃO") {
+          type = "ORGANIZAÇÃO";
+        } else if (type == "PALESTRANTES") {
+          type = "PALESTRANTE";
+        } else{
+          type = "PARTICIPANTE";
+        }
+
         label.setObjectText("TEXT", name);
+        label.setObjectText("TEXT_1", type);
         label.print(printerName);
       }
     };
