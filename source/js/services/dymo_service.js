@@ -34,11 +34,7 @@
     var dymoprinter = {
       print: function(name,type){
 
-        if (type == "ORGANIZAÇÃO") {
-          type = "ORGANIZAÇÃO";
-        } else if (type == "PALESTRANTES") {
-          type = "PALESTRANTE";
-        } else{
+        if (type != "ORGANIZAÇÃO" && type != "PALESTRANTE") {
           type = "PARTICIPANTE";
         }
 

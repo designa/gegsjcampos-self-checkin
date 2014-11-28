@@ -28,7 +28,7 @@
       a.checked_at = new Date();
       a.dirty = true;
       eventick.checkAttendee(defer, a);
-      dymoprinter.print(a.name);
+      dymoprinter.print(a.name, a.ticket_type);
       $scope.updateAttendeeStorage();
     }
   };

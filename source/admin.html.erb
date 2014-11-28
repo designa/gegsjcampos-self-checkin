@@ -9,7 +9,7 @@
     <%= link_to 'Sair', '', class: 'btn btn-embossed btn-primary pull-right', ng_click: 'logout()' %>
     <div class="content-header">
       <%= link_to 'Voltar para credenciamento', '/', class: 'btn btn-embossed btn-primary' %>
-      <%#= link_to 'Sincronizar com o servidor', '#/admin',  class: 'btn btn-embossed btn-primary', ng_click: 'syncEventick()' %>
+      <%= link_to 'Sincronizar com o servidor', '#/admin',  class: 'btn btn-embossed btn-primary', ng_click: 'syncEventick()' %>
       <%= link_to 'Adicionar participante', '#/admin',  class: 'btn btn-embossed btn-primary', ng_click: 'newAteendee = !newAteendee' %>
       <%= link_to 'Exportar', '/export',  class: 'btn btn-embossed btn-primary' %>
       <%= link_to 'Iniciar novo dia', '#/admin',  class: 'btn btn-embossed btn-primary', ng_click: 'resetDay()' %>
