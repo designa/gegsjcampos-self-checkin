@@ -35,7 +35,7 @@
       print: function(name,type){
 
         if (type != "ORGANIZAÇÃO" && type != "PALESTRANTE") {
-          type = "PARTICIPANTE";
+          type = "#gegsjcampos";
         }
 
         label.setObjectText("TEXT", name);
